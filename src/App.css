@@ -212,7 +212,7 @@
     right: 20px;
     background: white;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   .container .navwrapper nav .lists.active ul {
@@ -231,6 +231,27 @@
   }
   .container .navwrapper nav .loginbtnwrapper {
     display: none;
+  }
+  .container .navwrapper nav .loginbtnwrapper.active {
+    display: block;
+    position: absolute;
+    top: 300px;
+    right: 20px;
+    width: 120px;
+    border-radius: 10px;
+  }
+  .container .navwrapper nav .loginbtnwrapper.active button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 10px 10px !important;
+    padding: 20px 0px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white !important;
+    color: black;
+    font-weight: 500;
+    font-family: "poppins";
+    padding-bottom: 35px !important;
   }
   .container .contentwrapper {
     margin-right: 0 !important;
@@ -275,11 +296,73 @@
   .container .navwrapper {
     margin-bottom: 0 !important;
   }
+  .container .navwrapper nav .mobileview {
+    width: auto;
+  }
+  .container .navwrapper nav .hamburger-menu {
+    display: block;
+  }
+  .container .navwrapper nav .hamburger-menu button {
+    cursor: pointer;
+    border: none;
+    background-color: white;
+  }
+  .container .navwrapper nav .hamburger-menu button svg {
+    font-size: 30px;
+  }
   .container .navwrapper nav .lists {
     display: none;
   }
+  .container .navwrapper nav .lists.active {
+    display: block !important;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .container .navwrapper nav .lists.active ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+  }
+  .container .navwrapper nav .lists.active ul li {
+    padding: 10px 0;
+    font-family: "poppins";
+    font-weight: 500;
+    cursor: pointer;
+  }
   .container .navwrapper nav .loginbtnwrapper {
-    display: none !important;
+    display: none;
+  }
+  .container .navwrapper nav .loginbtnwrapper.active {
+    display: block;
+    position: absolute;
+    top: 280px;
+    right: 10px;
+    width: 120px;
+    border-radius: 10px;
+    z-index: 1;
+  }
+  .container .navwrapper nav .loginbtnwrapper.active button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 10px 10px !important;
+    padding: 20px 0px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white !important;
+    color: black;
+    font-weight: 500;
+    font-family: "poppins";
+    padding-bottom: 35px !important;
   }
   .container .contentwrapper {
     margin-right: 0 !important;

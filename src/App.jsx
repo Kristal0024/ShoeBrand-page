@@ -12,7 +12,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from 'react'
 
 function App() {
-  const [showmenu,setShowmenu]=useState(true);
+  const [showmenu,setShowmenu]=useState(false);
   const handleToggle=()=>{
     setShowmenu(!showmenu);
     console.log(showmenu)
@@ -40,7 +40,7 @@ function App() {
             <li>CONTACT</li>
           </ul>
         </div>
-        <div className="loginbtnwrapper">
+        <div className={`loginbtnwrapper ${showmenu?'active':''}`}>
           <Button className='loginbtn' >Login</Button>
         </div>
        </span>
